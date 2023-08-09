@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: soichisumi/issue-copy-action@v0.2.0
-      with:
-        keyword: "/copy"
-        targetRepository: mentorchita/newgen
-        githubToken: ${{ secrets.SECTRET_TOCKEN }}
-        contentOfNewIssue: 'prefix of newly created issue'
+      - uses: iaia/issue-copier@v1.2
+        with:
+          GITHUB_OWNER: 'mentorchita'
+          GITHUB_REPOSITORY: 'newgen'
+          GITHUB_DEST_REPOSITORY: 'GenerationTech'
+          GITHUB_ACCESS_TOKEN:  ${{ secrets.SECTRET_TOCKEN }}
