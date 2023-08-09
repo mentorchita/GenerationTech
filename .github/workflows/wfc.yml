@@ -1,0 +1,16 @@
+name: WFCCI
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: soichisumi/issue-copy-action@v0.2.0
+      with:
+        keyword: "/copy"
+        targetRepository: mentorchita/newgen
+        githubToken: ${{ secrets.SECTRET_TOCKEN }}
+        contentOfNewIssue: 'prefix of newly created issue'
