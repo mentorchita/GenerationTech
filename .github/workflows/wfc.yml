@@ -11,6 +11,6 @@ jobs:
       - uses: iaia/issue-copier@v1.2
         with:
           GITHUB_OWNER: 'mentorchita'
-          GITHUB_REPOSITORY: 'newgen'
-          GITHUB_DEST_REPOSITORY: 'GenerationTech'
-          GITHUB_ACCESS_TOKEN:  ${{ secrets.SECTRET_TOCKEN }}
+          GITHUB_REPOSITORY: 'GenerationTech'
+          GITHUB_DEST_REPOSITORY: 'newgen'
+          GITHUB_ACCESS_TOKEN:  ${{secrets.SECTRET_TOCKEN}}
