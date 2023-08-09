@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: iaia/issue-copier@v1.2
+      - name: Transfer issue
+        uses: dpanayotov/issue-cloner@v0.2
         with:
-          GITHUB_OWNER: 'mentorchita'
-          GITHUB_REPOSITORY: 'GenerationTech'
-          GITHUB_DEST_REPOSITORY: 'newgen'
-          GITHUB_ACCESS_TOKEN:  ${{secrets.SECTRET_TOCKEN}}
+            label: "clone"
+            targetRepo: mentorchita/newgen
+            token: ${{ secrets.SECTRET_TOCKEN }}  
