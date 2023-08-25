@@ -3,14 +3,27 @@
 
 <head>
   <title> My page </title>
+ <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 <header>
         <h1>Welcome to My Page</h1>
     </header>
-  <nav> 
-  <a href="index.html"> Home </a>
+
+  <nav class="navbar">
+    <div class="logo"> Logo</div>
+    <button class="menu-toggle" id="mobile-menu-toggle">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"> Home </a></li>
+      <li><a href=bs.html>Bootstrap</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+
+
   </nav>
   
   <main>
@@ -126,6 +139,7 @@
 
     My contact
   </footer>
+   <script src="scriptsmenu.js"></script>
 </body>
 
 </html>
